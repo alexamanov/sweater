@@ -1,6 +1,29 @@
 <html>
-<head></head>
+<head>
+    <title>Sweater</title>
+</head>
 <body>
-<h3>{{something}}</h3>
+<form action="" method="post">
+    <div class="wrap">
+        <label for="text">Text</label>
+        <input type="text" name="text">
+    </div>
+    <hr />
+    <div class="wrap">
+        <label for="tag">Tag</label>
+        <input type="text" name="tag">
+    </div>
+    <hr />
+    <div class="wrap">
+        <input type="submit" value="Go">
+    </div>
+</form>
+<div class="message-container">
+    {{#messages}}
+        <div>{{id}}</div>
+        <p>{{text}}</p>
+        <i>{{tag}}</i>
+    {{/messages}}
+</div>
 </body>
 </html>
